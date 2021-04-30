@@ -44,13 +44,13 @@ body{
 .pink{
 background-color: #fd79a8;
 }
-.blue{
+.green{
 background-color: #badc58;
 }
-.green{
+.orange{
 background-color: #f1c40f;
 }
-.black{
+.electricBlue{
     background-color: #7ed6df;
 }
 .action-container{
@@ -74,6 +74,13 @@ background-color: #f1c40f;
 }
 .main_container{
     background-color: #182C61;
+    height: 88vh;
+    overflow: auto;
+    padding-top : 2rem;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 /* modal css */
 .box_container{
@@ -145,10 +152,15 @@ padding: 1.7rem 1.2rem;
 }
 .task_desc_container{
     padding-left:0.5rem;
+    height :80%;
 }
 .task_desc{
     text-align: center;
+    overflow-y : auto;
+    height: 70%;
+    word-break: break-all; 
 }
 .uid{
     color: #444;
+    margin-bottom: 0.1rem;
 }

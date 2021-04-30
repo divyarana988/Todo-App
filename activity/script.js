@@ -23,9 +23,9 @@ function createBox() {
 </div>
 <div class="box_color_container">
     <div class="circle pink"></div>
-    <div class="circle blue"></div>
     <div class="circle green"></div>
-    <div class="circle black"></div>
+    <div class="circle orange"></div>
+    <div class="circle electricBlue"></div>
 </div>
 `;
     body.appendChild(box_container);
@@ -77,9 +77,32 @@ function createTask(color, task) {
         <div class="task_filter ${color}"></div>
         <div class="task_desc_container">
             <h3 class="uid">#example</h3>
-            <div class="task_desc">${task}</div>
+            <div class="task_desc contenteditable ="true">${task}</div>
         </div>
         </div >
     `;
     mainContainer.appendChild(taskContainer);
+
+    let taskFilter = taskContainer.querySelector(".task_filter");
+    /*
+    taskFilter.addEventListener("click", function () {
+        let cColor = taskFilter.classList[1];
+        let idx = colors.indexOf(cColor);
+        let newColorIdx = (idx + 1) % 4;
+        taskFilter.classList.remove(cColor);
+        taskFilter.classList.add(colors[newColorIdx]);
+    })
+    */
+    taskFilter.addEventListener("click", changeColor);
+
+}
+
+function changeColor(e) {
+    let taskFilter = e.currentTarget;
+    let colors = ["pink", "green", "orange", "electricBlue"];
+    let cColor = taskFilter.classList[1];
+    let idx = colors.indexOf(cColor);
+    let newColorIdx = (idx + 1) % 4;
+    taskFilter.classList.remove(cColor);
+    taskFilter.classList.add(colors[newColorIdx]);
 }
