@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #ecf0f1;
+}
+.bar_container {
+  background-color: #2c1a1a;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  /*&position: absolute;*/
+}
+.option_container {
+  background-color: #40407a;
+  height: 60%;
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin-right: 3rem;
+  display: flex;
+}
+.option {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option_color {
+  height: 55%;
+  width: 50%;
+  border-radius: 1rem;
+}
+.screen_container {
+  height: 88vh;
+  overflow: auto;
+  background-color: rgb(221, 207, 207);
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.icon_container {
+  height: 58%;
+  width: 8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: rgb(161, 159, 159);
+}
+.plus_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fas {
+  font-size: 1.5rem;
+}
+.active {
+  background-color: #2c2c54;
+}
+.card_container {
+  height: 20rem;
+  width: 35rem;
+  display: flex;
+  position: absolute;
+  top: 30vh;
+  left: calc((100vw - 36rem) / 2);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.698);
+}
+.card_input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 2rem 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 145%;
+  font-weight: 400;
+}
+.input_container {
+  height: 100%;
+  width: 70%;
+}
+.card_option_container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(71, 40, 40);
+  align-items: center;
+  padding: 1.7rem 1.2rem;
+}
+.yellow {
+  background-color: #ff9f1a;
+}
+.blue {
+  background-color: #cd84f1;
+}
+.green {
+  background-color: #3ae374;
+}
+.coral {
+  background-color: #ED4C67;
+}
+.card_option_container > .option {
+  height: 15%;
+  width: 60%;
+  border-radius: 0.4rem;
+}
+.border {
+  border: 0.2rem solid rgb(203, 243, 226);
+}
+.uid {
+  color: black;
+  margin-bottom: 0.1rem;
+}
+.task_container {
+  height: 10rem;
+  width: 16rem;
+  background-color: #fff;
+}
+.task_option {
+  height: 7%;
+}
+.task_desc_container {
+  height: 80%;
+  padding-left: 0.5rem;
+}
+.task_desc {
+  height: 70%;
+  overflow: auto;
+  text-align: center;
+  word-break: break-all;
+}
